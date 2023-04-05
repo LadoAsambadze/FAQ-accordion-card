@@ -1,9 +1,9 @@
-const buttons = document.querySelectorAll(".buttons");
+const buttons = document.querySelectorAll("button");
 
 buttons.forEach(function (button) {
   button.addEventListener("click", function (event) {
-    const parent = event.target.closest(".grid-item");
-    const paragraph = parent.querySelector("p");
-    paragraph.classList.toggle("hidden");
+    const parent = button.parentElement;
+    const grandparent = parent.parentElement;
+    grandparent.lastElementChild.classList.toggle("hidden");
   });
 });
