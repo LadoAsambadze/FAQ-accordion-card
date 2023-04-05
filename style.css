@@ -34,10 +34,6 @@ h1 {
   margin-bottom: 40px;
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 19px;
   width: 100%;
 }
 
@@ -55,6 +51,7 @@ h1 {
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 18px;
+  margin-top: 18px;
 }
 p {
   font-weight: 400;
@@ -71,7 +68,7 @@ p {
   display: none;
 }
 
-button {
+.text-button {
   border: none;
   background-color: white;
   font-family: "Kumbh Sans";
@@ -79,9 +76,13 @@ button {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-
   color: #4b4c5f;
   cursor: pointer;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background-color: white;
 }
 .pattern {
   top: 0px;
